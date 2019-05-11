@@ -1,4 +1,4 @@
-package phenix.pattern.command;
+package com.phenix.pattern.command;
 
 /**
  * @author Merlin
