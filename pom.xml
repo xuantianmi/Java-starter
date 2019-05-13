@@ -9,10 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!--修改Language level-->
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <!--修改Java Compiler-->
-        <maven.compiler.target>1.8</maven.compiler.target>
+
     </properties>
 
     <dependencies>
@@ -23,5 +20,19 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <!--修改Language level-->
+                    <source>1.8</source>
+                    <!--修改Java Compiler-->
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
